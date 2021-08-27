@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web Portfolio</title>
+        <link rel="stylesheet" a href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <div class="all">
+            <div class="home">
+                <div class="nav">
+                    <h1>Web Portfolio</h1>
+                    <div class="btns">
+                        <a href="#edu"><button>Education</button></a>
+                        <a href="#work"><button>Work</button></a>
+                        <a href="#contact"><button>Contact</button></a>
+                    </div>
+                    
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#edu" onclick="closeNav()">Education</a>
+                        <a href="#work" onclick="closeNav()">Work</a>
+                        <a href="#contact" onclick="closeNav()">Contact</a>
+                    </div>
+                    
+                    <div class="io">
+                        <button onclick="openNav()"><span><i class="fa fa-bars" aria-hidden="true"></i></span></button>
+                    </div>
+                </div>
+            
+                <div class="text">
+                    <h1>Senura Ratnayake</h1>
+                    <h2>Web Designer | Programmer</h2>
+                    <br>
+                    <a href="https://github.com/Senura2007"><button>Github</button></a>
+                </div>
+            </div>
+        
+            <div class="about">
+                <h1>About Me</h1>
+                <div class="p">
+                    <p>I'm Senura Ratnayake. I'm 14 years old and I'm a grade 9 student in Ananda College. I live in Sri Lanka. I have been doing Web designing and about 2 years and I have been learning graphic desgning and Programming about 8 months.</p>
+                    <a href="https://github.com/Senura2007"><button><i class="fab fa-github"></i></button></a>
+                    <a href="https://www.hackerrank.com/SenuraR"><button><i class="fab fa-hackerrank"></i></button></a>
+                    <a href="https://www.youtube.com/channel/UCg8YR1rwVetYbDzFrANPPGw"><button><i class="fab fa-youtube"></i></button></a>
+                    <a href="mailto:senuraratnayake@gmail.com"><button><i class="fa fa-envelope"></i></button></a>
+                    <a href="https://www.reddit.com/user/Senura2007"><button><i class="fab fa-reddit"></i></button></a>
+                </div>
+            </div>
+        
+            <div class="skills">
+                <h1>Skills</h1>
+                <a href="https://en.wikipedia.org/wiki/HTML"><button>HTML</button></a>
+                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><button>CSS</button></a>
+                <a href="https://en.wikipedia.org/wiki/JavaScript"><button>Javascript</button></a>
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><button>Python</button></a>
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B"><button>C++</button></a>
+            </div>
+            
+            <div class="edu" id="edu">
+                <h1>Education</h1>
+                <div class="schl">
+                    <img src="Pics/sc_c.png" class="sc">
+                    <div class="content">
+                        <h2>Sumedha College</h2>
+                        <h3>2013 - 2017</h3>
+                        <br>
+                        <p>Sumedha College is a Sri Lankan Government approved Private School located in Gampaha, Sri Lanka. Sumedha College provides primary and secondary education to more than 3500 students from ages 5 to 19.</p>
+                    </div>
+                </div>
+                
+                <div class="schl">
+                    <img src="Pics/ac_c.png" class="ac">
+                    <div class="content">
+                        <h2>Ananda College</h2>
+                        <h3>2018 - Present</h3>
+                        <br>
+                        <p>Ananda College is a Buddhist school for Sri Lankan boys, with classes from primary to secondary, on a campus of 10 acres in Maradana, Colombo.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work" id="work">
+                <h1>Work</h1>
+                <div class="works">
+                    <div class="work1">
+                        <img src="Pics/git.png">
+                        <h2>Portfolio Website</h2>
+                        <p>This is my first Portofolio Website created using HTML, CSS and Javascript for a task in BITS21.</p>
+                        <a href="https://github.com/Senura2007/Portfolio"><button>View</button></a>
+                    </div>
+                    <div class="work1">
+                        <img src="Pics/git.png">
+                        <h2>Password Generator</h2>
+                        <p>Random password generator created using HTML, CSS and javascript for a task in BITS21.</p>
+                        <a href="https://github.com/Senura2007/Password-Generator"><button>View</button></a>
+                    </div>
+                    <div class="work1">
+                        <img src="Pics/git.png">
+                        <h2>HTML Calculator</h2>
+                        <p>HTML calculator created using HTML, CSS and Javascript for a task in BITS21.</p>
+                        <a href="https://github.com/Senura2007/Calculator"><button>View</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact" id="contact">
+                <h1>Contact</h1>
+                <div id="form">
+                <form method="POST" action="https://formspree.io/xwkrzvye">
+                    <input type="name" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                </div>
+            </div>
+            
+            <div class="copy">
+                <h3>CopyRight &copy; Senura Ratnayake 2021</h3>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
